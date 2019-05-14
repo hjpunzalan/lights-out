@@ -1,9 +1,17 @@
 .Cell {
-  height: 100px;
-  width: 100px;
-  background-color: darkgray;
+  height: 10rem;
+  width: 10rem;
+  background-color: rgb(53, 0, 199);
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .Cell {
+    height: 6rem;
+    width: 6rem;
+  }
 }
 
 .Cell-lit {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }

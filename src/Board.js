@@ -67,10 +67,8 @@ class Board extends Component {
     let board = this.state.board;
     let [y, x] = coord.split("-").map(Number);
 
-
     function flipCell(y, x) {
       // if this coord is actually on board, flip it~!!!
-
       if (x >= 0 && x < ncols && y >= 0 && y < nrows) {
         board[y][x] = !board[y][x];
       }
@@ -112,11 +110,14 @@ class Board extends Component {
     })
     
     return (
-    <table className="Board">
+    <div className="Board">
+    <h1 className="Board-heading">Lights Out</h1>
+    <table className="Board-table">
       <tbody>
       {newBoard}
       </tbody>
     </table>
+      </div>
     );
   }
 }

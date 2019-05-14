@@ -1,3 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
 .Board {
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
 }
+
+.Board-table {
+  margin: 0 auto;
+  box-shadow: 0 0 3.5rem rgb(124, 240, 255);
+}
+
+
+.Board-heading {
+  color: #426DFB;
+  font-size: 5rem;
+  text-shadow: 0 0 1rem #2356FF;
+ font-family: "Press Start 2P";
+  animation: flux 3s linear infinite;
+  -moz-animation: flux 3s linear infinite;
+  -webkit-animation: flux 3s linear infinite;
+  -o-animation: flux 3s linear infinite;
+}
+
+
+
+
+@keyframes flux {
+
+  0%,
+  100% {
+    text-shadow: 0 0 1rem #1041FF, 0 0 3rem #1041FF, 0 0 10rem #1041FF, 0 0 10rem #1041FF, 0 0 .4rem #8BFDFE, .5rem .5rem .1rem #147280;
+    color: #28D7FE;
+    transform: scale(1);
+  }
+
+  50% {
+    text-shadow: 0 0 .5rem #082180, 0 0 1.5rem #082180, 0 0 5rem #082180, 0 0 5rem #082180, 0 0 .2rem #082180, .5rem .5rem .1rem #0A3940;
+    color: #146C80;
+    transform: scale(1.05);
+  }
+}
+
+@media (max-width: 65rem) {
+  #container {
+    width: 100%;
+  }
+
+    .Board-heading {
+      font-size: 3.5em;
+    }
+  }
