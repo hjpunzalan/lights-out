@@ -15,5 +15,11 @@ body {
   padding-top: 50px;
   color: white;
   text-align: center;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 

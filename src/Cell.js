@@ -16,6 +16,11 @@ import "./Cell.css"
  **/
 
 class Cell extends Component {
+  static defaultProps = {
+    flipCellsAroundMe: null,
+    isLit: false
+  }
+  
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
