@@ -33,7 +33,7 @@ class Board extends Component {
   static defaultProps = {
     nrows: 5,
     ncols: 5,
-    chanceLightStartsOn: 0.05
+    chanceLightStartsOn: 0.2
   }
   
 
